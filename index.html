@@ -7,9 +7,12 @@
     <title>Document</title>
     <style> #boton {padding: 5px;
         background-color: green;}</style>
+        
 </head>
-<body id="boton">
-    <button onclick="alert('Hola!');">Saludar</button>
+<body>   
+<div id="boton">
+    <button onclick="alert('Hola!'); event.stopPropagation()">Saludar</button>
+</div>
     <script src="eventos.js"> </script>
 </body>
 
